@@ -1,0 +1,138 @@
+---
+title: 'Relational Database - Basics'
+description: ""
+---
+
+<Note>
+**Person who successfully completed requirement for the given block:** 
+
+- Knows how to read the data from transactional database 
+- Understands benefits & limitations of transactional database
+- Can manipulate the structure and the data of the database
+- Understands the difference between various database systems
+</Note>
+
+## Welcome
+
+Learn the fundamentals of storing and manipulating data in a transactional database, essential for building applications with a foundational framework knowledge. Upon completion, you'll have the skills to read data, understand the benefits and limitations of transactional databases, manipulate database structures and data, and distinguish between various database systems.
+
+### Areas
+
+<AccordionGroup>
+  <Accordion icon="database" title="Filtering and projection">
+    Learn about SELECT, WHERE and FROM
+    
+    - 📗 [sql-select](https://www.postgresql.org/docs/11/sql-select.html)
+    - 📗 [queries-table-expressions](https://www.postgresql.org/docs/11/queries-table-expressions.html)
+    - 📗 [queries-select-lists](https://www.postgresql.org/docs/11/queries-select-lists.html)
+    - 📗 [queries-values](https://www.postgresql.org/docs/11/queries-values.html)
+    - 📗 [functions-comparison](https://www.postgresql.org/docs/11/functions-comparison.html)
+    - 📗 [functions-matching](https://www.postgresql.org/docs/11/functions-matching.)
+
+  </Accordion>
+
+  <Accordion icon="database" title="Retrieving portions of data">
+    Learn about LIMIT and OFFSET
+
+    - 📗 [queries-limit](https://www.postgresql.org/docs/11/queries-limit.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Simple join">
+    Learn about INNER and JOIN
+
+    - 📗 [queries-table-expressions](https://www.postgresql.org/docs/11/static/queries-table-expressions.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Sorting data">
+    Learn about ORDER BY
+
+    - 📗 [queries-order](https://www.postgresql.org/docs/11/static/queries-order.html)
+  </Accordion>
+  
+  <Accordion icon="rectangle-terminal" title="Basic data types">
+
+    - 📗 [datatype-numeric](https://www.postgresql.org/docs/11/static/datatype-numeric.html)
+    - 📗 [datatype-serial](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL)
+    - 📗 [datatype-character](https://www.postgresql.org/docs/11/static/datatype-character.html)
+    - 📗 [datatype-boolean](https://www.postgresql.org/docs/11/static/datatype-boolean.html)
+    - 📗 [datatype-datetime](https://www.postgresql.org/docs/11/static/datatype-datetime.html)
+    - 📗 [datatype-uuid](https://www.postgresql.org/docs/11/static/datatype-uuid.html)
+    - 📗 [uuid-ossp](https://www.postgresql.org/docs/11/static/uuid-ossp.html)
+    - 📙 [datatype-enum](https://www.postgresql.org/docs/11/static/datatype-enum.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Managing tables/schemas">
+
+    - 📗 [sql-createtable](https://www.postgresql.org/docs/11/static/sql-createtable.html)
+    - 📗 [sql-altertable](https://www.postgresql.org/docs/11/static/sql-altertable.html)
+    - 📗 [sql-droptable](https://www.postgresql.org/docs/11/static/sql-droptable.html)
+    - 📗 [ddl-schemas](https://www.postgresql.org/docs/11/static/ddl-schemas.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Basic constraints">
+    Learn about DEFAULT, UNIQUE, NULL, NOT NULL and PRIMARY KEY
+
+    - 📗 [ddl-constraints](https://www.postgresql.org/docs/11/static/ddl-constraints.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Managing data">
+    Learn about INSERT, UPDATE, DELETE and TRUNCATE
+    
+    - 📗 [sql-insert](https://www.postgresql.org/docs/11/static/sql-insert.html)
+    - 📗 [sql-update](https://www.postgresql.org/docs/11/static/sql-update.html)
+    - 📗 [sql-delete](https://www.postgresql.org/docs/11/static/sql-delete.html)
+    - 📗 [sql-truncate](https://www.postgresql.org/docs/11/sql-truncate.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Grouping">
+    Learn about GROUP BY and HAVING
+
+    - 📗 [querues-group](https://www.postgresql.org/docs/11/static/queries-table-expressions.html#QUERIES-GROUP)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Basic aggregate functions">
+    Learn about SUM, AVG, COUNT, MIN and MAX
+
+    LEARN
+    - 📗 [functions-aggregate](https://www.postgresql.org/docs/11/static/functions-aggregate.html)
+  
+    LEARN No-SQL
+    - 📗 [No-SQL wikipedia](https://en.wikipedia.org/wiki/NoSQL)
+    - 📗 [No-SQL db-engines](https://db-engines.com/en/article/NoSQL)
+    
+    LEARN Key-value stores
+    - 📗 [Key-value stores](https://db-engines.com/en/article/Key-value+Stores)
+    - 📙 [Redis](https://db-engines.com/en/system/Redis)
+
+
+    Interview
+
+    [] - What is a Primary Key?
+    - Tell me about basic data types in PostgreSQL.
+    - How to perform type casting?
+    - What's the difference between single quotes and double quotes  in PostgreSQL?
+    - What `UNIQUE` constraint guarantees?
+    - Can it be used for multiple columns?
+    - How does `UNIQUE` behave in combination with `NULL` values? Why does it work this way?
+    - What is the purpose of `INNER JOIN`?
+    - How do `LIMIT` and `OFFSET` work?
+    - How to sort data?
+    - Give an example of a query that uses `GROUP BY` and `HAVING`.
+    - How would you define No-SQL?
+    - Describe key-value store of your choice.
+      - Provide some use-cases of key-value stores.
+
+    Katas
+    - [Learn SQL with simple, interactive exercises](https://sqlbolt.com/lesson/introduction)
+  </Accordion>
+
+</AccordionGroup>
+
+<Card
+  title="Empty"
+  icon="leaf"
+  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+>
+  View the OpenAPI specification file
+</Card>
+

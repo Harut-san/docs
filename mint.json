@@ -29,6 +29,10 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Predefined learning modules",
+      "url": "predefined-learning-modules"
     }
   ],
   "anchors": [
@@ -74,6 +78,13 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Databases",
+      "pages": [
+        "predefined-learning-modules/relational-databases-basics",
+        "predefined-learning-modules/relational-databases-advanced"
       ]
     },
     {
