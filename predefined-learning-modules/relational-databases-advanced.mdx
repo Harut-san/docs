@@ -1,33 +1,210 @@
 ---
 title: 'Relational Database - Advanced'
-description: "Master the art of leveraging relational databases, specifically PostgreSQL, and gain the discernment to choose the right solution for diverse persistence needs. Upon completion, you'll be well-versed in various database types, capable of constructing robust solutions that meet customer requirements. Develop expertise in query optimization, ensure high-level data integrity through complex operations, and deepen your understanding of different data models and their practical applications."
+description: ""
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+**A person who successfully completed requirement for the given block:** 
+
+- Knows other types of databases and common use-cases for them
+- Can build a robust database solution that satisfies customer needs
+- Can use query optimization technics
+- Knows how to use complex operations keeping the high-level of data integrity
+- Understands different data models and their applications
+
 </Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Master the art of leveraging relational databases, specifically PostgreSQL, and gain the discernment to choose the right solution for diverse persistence needs. Upon completion, you'll be well-versed in various database types, capable of constructing robust solutions that meet customer requirements. Develop expertise in query optimization, ensure high-level data integrity through complex operations, and deepen your understanding of different data models and their practical applications.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Areas
 
-## Authentication
+<AccordionGroup>
+  <Accordion icon="database" title="More joins">
+    Learn about LEFT and RIGHT
+    
+    - 📗 [queries-table-expressions](https://www.postgresql.org/docs/11/static/queries-table-expressions.html)
+  </Accordion>
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+  <Accordion icon="database" title="Filtering out distinct rows">
+    Learn about DISTINCT [ON]
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+    - 📗 [sql-select](https://www.postgresql.org/docs/11/sql-select.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Conditionals">
+    Learn about CASE, COALESCE, GREATEST and LEAST
+
+    - 📗 [functions-conditional](https://www.postgresql.org/docs/11/static/functions-conditional.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Text/math operations & formatting">
+    Learn about ORDER BY
+
+    Text:
+    - string concatenation (`||` / concat / concat_ws)
+    - length
+    - lower / upper
+    - quote_*
+
+    > Be aware of encoding/converting functions.
+
+    Math:
+    - operators
+    - round
+    - ceil
+    - floor
+    - sign
+    - trunc
+    - random
+    - div
+    - scale
+
+    Learn
+    - 📗 [functions-string](https://www.postgresql.org/docs/11/static/functions-string.html)
+    - 📗 [functions-formatting](https://www.postgresql.org/docs/11/static/functions-formatting.html)
+    - 📗 [functions-math](https://www.postgresql.org/docs/11/static/functions-math.html)    
+  </Accordion>
+  
+  <Accordion icon="rectangle-terminal" title="JSON / JSONB">
+    Learn about
+
+    - 📗 [datatype-json](https://www.postgresql.org/docs/11/static/datatype-json.html)
+    - 📗 [functions-json](https://www.postgresql.org/docs/11/static/functions-json.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Foreign keys and referential integrity">
+    Learn about FOREIGN KEY
+
+    - 📗 [ddl-constraints](https://www.postgresql.org/docs/11/static/ddl-constraints.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Basic indexing">
+    - Understand that there are different types that support different operations (no need for in-depth theory how it works)
+    - Unique
+    - Multicolumn
+
+    Learn
+    - 📗 [indexes](https://www.postgresql.org/docs/11/static/indexes.html)
+    - 📗 [types](https://www.postgresql.org/docs/11/indexes-types.html)
+    - 📗 [multicolumn](https://www.postgresql.org/docs/11/indexes-multicolumn.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Subqueries">
+    Learn about 
+    
+    - 📗 [functions-subquery](https://www.postgresql.org/docs/11/static/functions-subquery.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Transactions basics">
+    Learn about 
+
+    - 📗 [sql-begin](https://www.postgresql.org/docs/11/static/sql-begin.html)
+    - 📗 [sql-commit](https://www.postgresql.org/docs/11/static/sql-commit.html)
+    - 📗 [sql-rollback](https://www.postgresql.org/docs/11/static/sql-rollback.html)
+  </Accordion>
+    
+  <Accordion icon="rectangle-terminal" title="Views & materialized views">
+    Learn about 
+
+    - 📗 [sql-createview](https://www.postgresql.org/docs/11/static/sql-createview.html)
+    - 📗 [rules-materializedviews](https://www.postgresql.org/docs/11/static/rules-materializedviews.html)
+    - 📗 [sql-refreshmaterializedview](https://www.postgresql.org/docs/11/static/sql-refreshmaterializedview.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Set operations">
+    Learn about UNION, INTERSECT and EXCEPT
+
+    - 📗 [queries-union](https://www.postgresql.org/docs/11/static/queries-union.html)
+    - 📗 [sql-select](https://www.postgresql.org/docs/11/static/sql-select.html)
+    - 📗 [type-resolution](https://www.postgresql.org/docs/current/typeconv-union-case.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Common table expressions aka CTE">
+    Learn about
+
+    - 📗 [queries-with](https://www.postgresql.org/docs/11/static/queries-with.html)
+    - 📗 [workshop-db-03](https://github.com/qbart/workshop-db-03)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Generating series for different data types">
+    Learn about
+
+    - 📗 [functions-srf](https://www.postgresql.org/docs/11/static/functions-srf.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Window functions">
+    Learn about
+
+    - 📗 [tutorial-window](https://www.postgresql.org/docs/11/static/tutorial-window.html)
+    - 📗 [sql-select](https://www.postgresql.org/docs/11/static/sql-select.html#SQL-WINDOW)
+    - 📗 [functions-window](https://www.postgresql.org/docs/11/static/functions-window.html)
+    - 📗 [workshop-db-03](https://github.com/qbart/workshop-db-03)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Indexing">
+    Learn about
+
+    - 📗 [indexes](https://www.postgresql.org/docs/11/static/indexes.html)
+    - 📗 [heroku postgres indexes](https://devcenter.heroku.com/articles/postgresql-indexes)
+    - 📗 [principles-and-applications-of-the-index-types-supported-by-postgresql](https://medium.com/@Alibaba_Cloud/principles-and-applications-of-the-index-types-supported-by-postgresql-481f59bab67d)
+    - 📗 [tour-of-postgres-index-types](https://www.citusdata.com/blog/2017/10/17/tour-of-postgres-index-types/)
+    - 📗 [habr blog](https://habr.com/en/company/postgrespro/blog/441962/) (1-10)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Query planner">
+    Learn about
+
+    - 📗 [explaining-the-unexplainable 1](https://www.depesz.com/2013/04/16/explaining-the-unexplainable/)
+    - 📗 [explaining-the-unexplainable 2](https://www.depesz.com/2013/04/27/explaining-the-unexplainable-part-2/)
+    - 📗 [explaining-the-unexplainable 3](https://www.depesz.com/2013/05/09/explaining-the-unexplainable-part-3/)
+    - 📗 [explaining-the-unexplainable 4](https://www.depesz.com/2013/05/19/explaining-the-unexplainable-part-4/)
+    - 📗 [explaining-the-unexplainable 5](https://www.depesz.com/2013/05/30/explaining-the-unexplainable-part-5/)
+    - 📗 [explaining-the-unexplainable 6](https://www.depesz.com/2021/06/20/explaining-the-unexplainable-part-6-buffers/)
+    - 📗 [performance-tips](https://www.postgresql.org/docs/11/performance-tips.html)
+    - 📗 [parallel-query](https://www.postgresql.org/docs/11/parallel-query.html)
+    - 📗 [performance-cheat-sheet-postgresql](https://severalnines.com/blog/performance-cheat-sheet-postgresql)
+    - 📗 [reading-an-explain-analyze-query-plan](https://robots.thoughtbot.com/reading-an-explain-analyze-query-plan)
+    - 📗 [plan-visualization](http://tatiyants.com/pev/#/plans)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="More joins">
+    Learn about FULL and CROSS
+
+    - 📗 [queries-table-expressions](https://www.postgresql.org/docs/11/static/queries-table-expressions.html)
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Merge (aka upsert)">
+    
+
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Simple locking">
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Triggers & generated-columns">
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Text search">
+  </Accordion>
+</AccordionGroup>
+
+   <h4>Interview</h4>
+
+    <input type="checkbox" /> What is a Primary Key?<br />
+    <input type="checkbox" /> Tell me about basic data types in PostgreSQL.<br />
+    <input type="checkbox" /> How to perform type casting?<br />
+    <input type="checkbox" /> What's the difference between single quotes and double quotes  in PostgreSQL?<br />
+    <input type="checkbox" /> What `UNIQUE` constraint guarantees?<br />
+    <input type="checkbox" /> Can it be used for multiple columns?<br />
+    <input type="checkbox" /> How does `UNIQUE` behave in combination with `NULL` values? Why does it work this way?<br />
+    <input type="checkbox" /> What is the purpose of `INNER JOIN`?<br />
+    <input type="checkbox" /> How do `LIMIT` and `OFFSET` work?<br />
+    <input type="checkbox" /> How to sort data?<br />
+    <input type="checkbox" /> Give an example of a query that uses `GROUP BY` and `HAVING`.<br />
+    <input type="checkbox" /> How would you define No-SQL?<br />
+    <input type="checkbox" /> Describe key-value store of your choice.<br />
+    <input type="checkbox" /> Provide some use-cases of key-value stores.<br />
+    <h4>Katas</h4>
+    <input type="checkbox" /> [Learn SQL with simple, interactive exercises](https://sqlbolt.com/lesson/introduction)
